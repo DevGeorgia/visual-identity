@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<div th:fragment="skills" class="content myFrag p-2 mx-3 my-4">
+    <p>
+        <span class="material-symbols-outlined myIcon">build_circle</span>
+        <span th:text="#{skills.title}" class="is-size-5"></span>
+    </p>
+
+    <!-- What are your main skills ? -->
+    <p>
+        <!-- Front-end examples -->
+        <span class="tag is-primary">Angular</span>
+
+        <!-- back-end examples -->
+        <span class="tag is-info">Java</span>
+
+        <!-- Other examples -->
+        <span class="tag is-warning">Docker</span>
+    </p>
+</div>
+</html>

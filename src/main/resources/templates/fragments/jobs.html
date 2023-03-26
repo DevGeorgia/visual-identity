@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<div th:fragment="jobs" class="content myFrag p-2 mx-3 my-4">
+
+    <p>
+        <span class="material-symbols-outlined myIcon">business_center</span>
+        <span th:text="#{jobs.title}" class="is-size-5"></span>
+    </p>
+    <p>
+        <!--List of you desired job titles -->
+        <span th:text="#{jobs.target.one}" class="tag is-dark"></span>
+        <span th:text="#{jobs.target.two}" class="tag is-dark"></span>
+        <span th:text="#{jobs.target.three}" class="tag is-dark"></span>
+    </p>
+</div>
+</html>
