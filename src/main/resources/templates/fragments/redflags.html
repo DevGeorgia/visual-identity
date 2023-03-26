@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="redFlags" class="content myFrag p-2 mx-3 my-4">
+    <p>
+        <span class="material-symbols-outlined myIcon">warning</span>
+        <span th:text="#{redFlags.title}" class="is-size-5"></span>
+    </p>
+
+    <!-- What type of company are you running from ? -->
+    <ul>
+        <li th:text="#{redFlags.reason.one}"></li>
+        <li th:text="#{redFlags.reason.two}"></li>
+        <li th:text="#{lookingFor.reason.three}"></li>
+    </ul>
+
+</div>
+</html>

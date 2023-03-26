@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<div th:fragment="social" class="content myFrag p-2 mx-3 my-4">
+    <p>
+        <span class="material-symbols-outlined myIcon">person</span>
+        <span th:text="#{social.title}" class="is-size-5"></span>
+    </p>
+
+    <!-- Who are you ? -->
+        <div class="columns">
+
+            <div class="column">
+                <!-- Picture -->
+                    <img class="is-rounded imgResp" th:src="@{/img/profil_pic_monkey.png}" th:alt="#{social.img}">
+
+            </div>
+
+            <div class="column">
+                <!-- Description -->
+                <p th:text="#{social.description}"></p>
+
+                <!-- Social links -->
+                <p>
+                    <!-- Linkedin -->
+                    <a th:href="#{social.linkedin.url}" class="mx-2"><img th:src="@{/img/social/linkedin-logo.png}" th:alt="#{social.linkedin.alt}"></a>
+
+                    <!-- Github -->
+                    <a th:href="#{social.github.url}" class="mx-2"><img th:src="@{/img/social/github.png}" th:alt="#{social.github.alt}"></a>
+
+                    <!-- Twitter -->
+                    <a th:href="#{social.twitter.url}" class="mx-2"><img th:src="@{/img/social/twitter.png}" th:alt="#{social.twitter.alt}"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<div th:fragment="location" class="content myFrag p-2 mx-3 my-4">
+    <p>
+        <span class="material-symbols-outlined myIcon">where_to_vote</span>
+        <span th:text="#{location.title}" class="is-size-5"></span>
+    </p>
+
+    <p>
+        <!-- Location preferences -->
+        <span th:text="#{location.onsite}"></span>
+        <span> : </span>
+        <span th:text="#{location.onsite.city}" class="high"></span>
+        <span>, </span>
+        <span th:text="#{location.onsite.travel}"></span>
+    </p>
+
+    <p>
+        <!-- Remote preferences -->
+        <span th:text="#{location.remote}"></span>
+        <span> : </span>
+        <span th:text="#{location.remote.hybrid}" class="high"></span>
+    </p>
+
+</div>
+</html>

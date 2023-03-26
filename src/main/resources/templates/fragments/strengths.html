@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<div th:fragment="strengths" class="content myFrag p-2 mx-3 my-4">
+    <p>
+        <span class="material-symbols-outlined myIcon">auto_awesome</span>
+        <span th:text="#{strengths.title}" class="is-size-5"></span>
+    </p>
+
+    <!-- What are your strengths ? What can make you a better choice than the others candidates ? -->
+    <ul>
+        <li th:text="#{strengths.reason.one}"></li>
+        <li th:text="#{strengths.reason.two}"></li>
+        <li th:text="#{strengths.reason.three}"></li>
+    </ul>
+</div>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<div th:fragment="projects" class="content myFrag p-2 mx-3 my-4">
+    <p>
+        <span class="material-symbols-outlined myIcon">menu_book</span>
+        <span th:text="#{projects.title}" class="is-size-5"></span>
+    </p>
+
+    <!-- Some personal projects you want to share ? -->
+
+        <!-- You can duplicate this columns block for each project -->
+        <!-- Project - Start -->
+        <div class="columns">
+            <!-- Project picture -->
+            <div class="column is-one-third">
+                    <img th:src="@{/img/projects/blog_vectorjuice.jpg}" class="imgResp imgView" alt="Project picture"/>
+            </div>
+
+            <!-- Project description -->
+            <div class="column">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p th:text="#{projects.card.one.title}" class="title is-4"></p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p th:text="#{projects.card.one.description}"></p>
+                        <a th:href="#{projects.card.one.url}" th:text="#{projects.card.one.url}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project - End -->
+
+        <!-- Project - Start -->
+        <div class="columns">
+
+            <!-- Project picture -->
+            <div class="column is-one-third">
+
+                    <img th:src="@{/img/projects/blog_vectorjuice.jpg}" class="imgResp imgView" alt="Project picture"/>
+
+            </div>
+
+            <!-- Project description -->
+            <div class="column">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p th:text="#{projects.card.two.title}" class="title is-4"></p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p th:text="#{projects.card.two.description}"></p>
+                        <a th:href="#{projects.card.two.url}" th:text="#{projects.card.two.url}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project - End -->
+
+    </div>
+</html>
