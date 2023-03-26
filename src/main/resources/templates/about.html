@@ -4,20 +4,20 @@
 
 <body>
 
-    <div class="columns">
+    <div class="columns m-2">
         <div class="column is-one-quarter">
             <div th:replace="~{fragments/social :: social}"></div>
+            <div th:replace="~{fragments/jobs :: jobs}"></div>
+            <div th:replace="~{fragments/skills :: skills}"></div>
             <div th:replace="~{fragments/location :: location}"></div>
         </div>
         <div class="column">
-            <div th:replace="~{fragments/jobs :: jobs}"></div>
-            <div th:replace="~{fragments/skills :: skills}"></div>
+            <div th:replace="~{fragments/strengths :: strengths}"></div>
             <div th:replace="~{fragments/projects :: projects}"></div>
         </div>
         <div class="column">
             <div th:replace="~{fragments/lookingfor :: lookingFor}"></div>
             <div th:replace="~{fragments/redflags :: redFlags}"></div>
-            <div th:replace="~{fragments/strengths :: strengths}"></div>
         </div>
     </div>
 
