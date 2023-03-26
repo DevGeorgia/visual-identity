@@ -15,7 +15,7 @@
         <div class="columns">
             <!-- Project picture -->
             <div class="column is-one-third">
-                    <img th:src="@{/img/projects/blog_vectorjuice.jpg}" class="imgResp imgView" alt="Project picture"/>
+                    <img th:src="@{/img/projects/} + #{projects.card.one.img}" class="imgResp imgView" alt="Project picture"/>
             </div>
 
             <!-- Project description -->
@@ -41,7 +41,7 @@
             <!-- Project picture -->
             <div class="column is-one-third">
 
-                    <img th:src="@{/img/projects/blog_vectorjuice.jpg}" class="imgResp imgView" alt="Project picture"/>
+                    <img th:src="@{/img/projects/} + #{projects.card.two.img}" class="imgResp imgView" alt="Project picture"/>
 
             </div>
 
