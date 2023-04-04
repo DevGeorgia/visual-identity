@@ -10,57 +10,46 @@
 
     <!-- Some personal projects you want to share ? -->
 
-        <!-- You can duplicate this columns block for each project -->
-        <!-- Project - Start -->
-        <div class="columns">
-            <!-- Project picture -->
-            <div class="column is-one-third">
-                    <img th:src="@{/img/projects/} + #{projects.card.one.img}" class="imgResp imgView" alt="Project picture"/>
-            </div>
-
-            <!-- Project description -->
-            <div class="column">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content">
-                            <p th:text="#{projects.card.one.title}" class="title is-4"></p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <p th:text="#{projects.card.one.description}"></p>
-                        <a th:href="#{projects.card.one.url}" th:text="#{projects.card.one.url}"></a>
-                    </div>
-                </div>
-            </div>
+    <!-- You can duplicate this columns block for each project -->
+    <!-- Project - Start -->
+    <div class="columns">
+        <!-- Project picture -->
+        <div class="column is-one-third-tablet is-half-desktop">
+            <a th:href="@{/img/projects/} + #{projects.card.one.img}" target="_blank">
+                <img th:src="@{/img/projects/} + #{projects.card.one.img}" class="imgResp" alt="Project picture"/>
+            </a>
         </div>
-        <!-- Project - End -->
 
-        <!-- Project - Start -->
-        <div class="columns">
-
-            <!-- Project picture -->
-            <div class="column is-one-third">
-
-                    <img th:src="@{/img/projects/} + #{projects.card.two.img}" class="imgResp imgView" alt="Project picture"/>
-
-            </div>
-
-            <!-- Project description -->
-            <div class="column">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content">
-                            <p th:text="#{projects.card.two.title}" class="title is-4"></p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <p th:text="#{projects.card.two.description}"></p>
-                        <a th:href="#{projects.card.two.url}" th:text="#{projects.card.two.url}"></a>
-                    </div>
+        <!-- Project description -->
+        <div class="column">
+                <div>
+                    <p th:text="#{projects.card.one.title}" class="title is-5"></p>
+                    <p th:text="#{projects.card.one.description}"></p>
+                    <a th:href="#{projects.card.one.url}" target="_blank">View details...</a>
                 </div>
-            </div>
         </div>
-        <!-- Project - End -->
-
     </div>
+    <!-- Project - End -->
+
+    <!-- Project - Start -->
+    <div class="columns">
+        <!-- Project picture -->
+        <div class="column is-one-third-tablet is-half-desktop">
+            <a th:href="@{/img/projects/} + #{projects.card.two.img}" target="_blank">
+                <img th:src="@{/img/projects/} + #{projects.card.two.img}" class="imgResp" alt="Project picture"/>
+            </a>
+        </div>
+
+        <!-- Project description -->
+        <div class="column">
+            <div>
+                <p th:text="#{projects.card.two.title}" class="title is-5"></p>
+                <p th:text="#{projects.card.two.description}"></p>
+                <a th:href="#{projects.card.two.url}" target="_blank">View details...</a>
+            </div>
+        </div>
+    </div>
+    <!-- Project - End -->
+
+</div>
 </html>
